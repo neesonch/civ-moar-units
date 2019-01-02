@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="3cff3c4b-d7ff-4df4-8d4e-548df713cc3b" version="2">
+  <Properties>
+    <Name>Moar Modern Aircraft</Name>
+    <Stability>Experimental</Stability>
+    <Teaser>Adds a few extra modern aircraft with civ-specific models</Teaser>
+    <Description>Adds a few extra modern aircraft. Created using Gedemon's tutorial with models taken from the CivFanatics repository and the Advanced Air-Naval-Ground Units Megamod.
+
+INTERCEPTOR
+Land-based jet - intermediary between Fighter and Jet Fighter (Which is renamed to Air Superiority Fighter, and can no longer operate from carriers) in terms of strength, uses Oil instead of Aluminum
+
+Models:
+- Default: F-4 Phantom
+- England, Germany, Italy: Tornado
+- Sweden: Draken
+- France, Brazil, India, Arabia, Zulus: Mirage-2000
+- China, Russia: Su-34 Fullback
+
+NAVAL FIGHTER
+Slightly less strength and range than the Interceptor, but can operate from carriers
+
+Models:
+- Default: F-8 Crusader
+- England, Italy, Spain, Siam: Harrier
+- America, Persia: F-14 Tomcat
+- Arabia: F/A-18 Hornet
+- China, Russia, India: Su-27 Flanker
+
+
+STEALTH FIGHTER
+Slightly less strength than Air Superiority Fighter, but comes with free Evasion promotion (like the Stealth Bomber) and can operate from carriers. Significantly more expensive to counterbalance this and reflect their real-world rarity.
+
+Models:
+- Default: F-35 Lighnting II
+- Russia, India: Su-57</Description>
+    <Authors>Cormac Neeson</Authors>
+    <SpecialThanks>Gedemon, Wolfdog, snafusmith, labriejp</SpecialThanks>
+    <HideSetupGame>0</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>1</SupportsMultiplayer>
+    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMac>1</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>0</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+  </Properties>
+  <Dependencies />
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="BC8074FD91B3D60E90B8F3A1BE4B0151" import="1">Art/Draken/draken.fxsxml</File>
+    <File md5="36B9939A6DF4CD8D59E4DF791B610DC5" import="1">Art/Draken/Draken.gr2</File>
+    <File md5="0BE5F14E03D67818CD23485C2F06588D" import="1">Art/Draken/Draken_diff.dds</File>
+    <File md5="98C9E84DED55F7B3B71983139C9DA6BD" import="1">Art/Draken/Draken_sref.dds</File>
+    <File md5="A9DFC1315E9F4B81C0479287C5AAF83D" import="1">Art/F-14/F-14.fxsxml</File>
+    <File md5="5CAE2F742359622AEF208BE23E5F9430" import="1">Art/F-14/F-14.gr2</File>
+    <File md5="5AB8BBAD4169F879BE0D971676AA86A3" import="1">Art/F-14/F-14_diff.dds</File>
+    <File md5="FFD782D930E84AC23ED07A1943F93AB6" import="1">Art/F-14/F-14_sref.dds</File>
+    <File md5="33C24A6581BF994A4ED9B03BE40AD5FC" import="1">Art/F-35/F-35.fxsxml</File>
+    <File md5="5A58EC9A7FD2E30ADF9B93D95E55286A" import="1">Art/F-35/F-35.gr2</File>
+    <File md5="A15AD85EDC6F3AB93E1A32AD70578941" import="1">Art/F-35/F-35_diff.dds</File>
+    <File md5="E485AC0F9B72F1037866AA4AB7203F21" import="1">Art/F-35/F-35_sref.dds</File>
+    <File md5="CF5BB0B5A0E7807243923C4418436E99" import="1">Art/F-4/F4DBritain.dds</File>
+    <File md5="55556860A14D757F37F1DAFF14930DBA" import="1">Art/F-4/F4DBritain.fxsxml</File>
+    <File md5="2C7DD0526726C95B78BBA3F155ED2D87" import="1">Art/F-4/F4DBritain.gr2</File>
+    <File md5="F9008695BB62FB829A6C881304A6DC32" import="1">Art/F-4/F4SREF.dds</File>
+    <File md5="27577D55598B148C4F05DF941D16A077" import="1">Art/F-8/F-8.fxsxml</File>
+    <File md5="0C918A99A37D6992BB133C99CE27B3A3" import="1">Art/F-8/F-8.gr2</File>
+    <File md5="4BA3E685DE9444E60102E33D9DC06AED" import="1">Art/F-8/F-8_diff.dds</File>
+    <File md5="82958130D7C4EC362C505D7CC450A4E5" import="1">Art/F-8/F-8_sref.dds</File>
+    <File md5="3341E659D8BC935E68CF700802825A39" import="1">Art/FA-18/FA-18.fxsxml</File>
+    <File md5="A7BFAA2660009355E7AF4983DE5370C0" import="1">Art/FA-18/FA-18.gr2</File>
+    <File md5="73CE1AFA8C69AB1F0C1E44A9E34E2E63" import="1">Art/FA-18/FA-18_diff.dds</File>
+    <File md5="1FC6265629612521B38E885AF9CABEF0" import="1">Art/FA-18/FA-18_sref.dds</File>
+    <File md5="0AC4AE245A5CE1FA9E663B2C260F2BC2" import="1">Art/Harrier/harrier.fxsxml</File>
+    <File md5="7ED3973CCEAEB197D7D3839C49022CDF" import="1">Art/Harrier/Harrier.gr2</File>
+    <File md5="AB24EEBE0F92F8E0E49B4CC6ADB2F989" import="1">Art/Harrier/Harrier_diff.dds</File>
+    <File md5="1E4E47B90E7EE2A55A8933922BC35DA0" import="1">Art/Harrier/Harrier_sref.dds</File>
+    <File md5="1FBB9057047076138F6A66171548EE37" import="1">Art/Mirage-2000/Mirage2000.fxsxml</File>
+    <File md5="C062DBFA70549D84B3E36341B713DBAD" import="1">Art/Mirage-2000/Mirage2000.gr2</File>
+    <File md5="48CD29B3D41191A1C28E84E6094C25EA" import="1">Art/Mirage-2000/Mirage2000_diff.dds</File>
+    <File md5="0BC836749ACB5EF07A39989DA0E5B0AA" import="1">Art/Mirage-2000/Mirage2000_sref.dds</File>
+    <File md5="C52EE1524E3580C78757F22791F34C44" import="1">Art/PAK-FA/SuT-50.fxsxml</File>
+    <File md5="29B481AAF16E27009FD14CE1C6751149" import="1">Art/PAK-FA/SuT-50.gr2</File>
+    <File md5="9C9FED80D1C6A23014F3FF2CF8880998" import="1">Art/PAK-FA/SuT-50_diff.dds</File>
+    <File md5="ED962F070C71FE7E8F20A5FDF4DC1B4F" import="1">Art/PAK-FA/SuT-50_sref.dds</File>
+    <File md5="9E8D39BDAC93C1492CCF0E000D7483E5" import="1">Art/Su-27/Su-27.fxsxml</File>
+    <File md5="BE973396E26C3BF03777A93BCB5086A5" import="1">Art/Su-27/Su-27.gr2</File>
+    <File md5="4342A257E4E668C1EB411DB4C163C3BB" import="1">Art/Su-27/Su-27_diff.dds</File>
+    <File md5="15BC476FDBC09646F3CF94065370B927" import="1">Art/Su-27/Su-27_sref.dds</File>
+    <File md5="D5D2382AF412301164AF724E59B51745" import="1">Art/Su-34/Su-34.fxsxml</File>
+    <File md5="0695F0ED312661CBFD9EF856E6F53CE5" import="1">Art/Su-34/Su-34.gr2</File>
+    <File md5="4299EEEF3B89C882CBD139BDDF2D7F33" import="1">Art/Su-34/Su-34_diff.dds</File>
+    <File md5="03372A58791972391CB6950095D7949A" import="1">Art/Su-34/Su-34_sref.dds</File>
+    <File md5="AD141CA355644ABE248F43A5C3492D66" import="1">Art/Tornado/Tornado Britain.dds</File>
+    <File md5="A7FB315A776C34E771E6400754545325" import="1">Art/Tornado/Tornado Britain2.dds</File>
+    <File md5="85C398F890E2FD63D23AEE40D962100E" import="1">Art/Tornado/Tornado Germany.dds</File>
+    <File md5="2C6A8D9D5D25F91CF8FD217EC6FFD56F" import="1">Art/Tornado/Tornado Italy.dds</File>
+    <File md5="3D85A44B727CF1F245FB0187E83DAEF3" import="1">Art/Tornado/TornadoGR1_Britain.fxsxml</File>
+    <File md5="B2C62F2A2143F17E9D31379E0D522EA3" import="1">Art/Tornado/TornadoGR1_Britain.gr2</File>
+    <File md5="AD141CA355644ABE248F43A5C3492D66" import="1">Art/Tornado/TornadoGR1_diff.dds</File>
+    <File md5="0B12620083898ABD8EFA1A693E6ACCC3" import="1">Art/Tornado/TornadoGR1.fxsxml</File>
+    <File md5="6C08587FA0CFA6402A8B63A5DB8CB46C" import="1">Art/Tornado/TornadoGR1.gr2</File>
+    <File md5="E34EB1E20F971F6A2B84CB7E87A1A5B6" import="1">Art/Tornado/TornadoGR1_Germany.fxsxml</File>
+    <File md5="0AF4B02A1F274827708169A070C6A48A" import="1">Art/Tornado/TornadoGR1_Germany.gr2</File>
+    <File md5="D8C8647AF1967D74BD4AA7F2ED94F62B" import="1">Art/Tornado/TornadoGR1_Italy.fxsxml</File>
+    <File md5="979B284731474C16B88C04540ADC475D" import="1">Art/Tornado/TornadoGR1_Italy.gr2</File>
+    <File md5="E6F787A971DEE88B8142E25B107E57DB" import="1">Art/Tornado/TornadoGR1_sref.dds</File>
+    <File md5="8CE724E1546414BC46B9EC4425931F32" import="0">SQL/updateNavalFighterVariants.sql</File>
+    <File md5="EBF66C4CC64C333F2DAF7478C66F5749" import="0">SQL/updateDefaultJetFighter.sql</File>
+    <File md5="05F47EFBB880EF34AD7FAF481C878994" import="0">SQL/insertNavalFighter.sql</File>
+    <File md5="0E4FC6AF6F0AF69FCB885256DBF87A89" import="0">SQL/updatePromotionPaths.sql</File>
+    <File md5="1A3E3BCB744F94AD272D7842E3C5722F" import="0">SQL/updateInterceptorVariants.sql</File>
+    <File md5="D4DC917EBE66022566F13C115C2370DD" import="0">SQL/insertInterceptor.sql</File>
+    <File md5="C96077175480F3C4728C5546C48C2A98" import="0">SQL/insertStealthFighter.sql</File>
+    <File md5="64C9EA20CF93CD24C1793003A813FD9F" import="0">SQL/updateStealthFighterVariants.sql</File>
+  </Files>
+  <Actions>
+    <OnModActivated>
+      <UpdateDatabase>SQL/insertInterceptor.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/insertNavalFighter.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/insertStealthFighter.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updateInterceptorVariants.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updateNavalFighterVariants.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/UpdateDefaultJetFighter.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updateStealthFighterVariants.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updatePromotionPaths.sql</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+</Mod>
