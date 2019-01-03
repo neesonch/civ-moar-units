@@ -43,7 +43,7 @@ INSERT INTO Unit_AITypes (UnitType, UnitAIType)
 
 /*Upgrade path*/
 INSERT INTO Unit_ClassUpgrades (UnitType, UnitClassType)
-	SELECT  ('UNIT_NAVAL_FIGHTER') , ('UNITCLASS_JET_FIGHTER')
+	SELECT  ('UNIT_NAVAL_FIGHTER') , ('UNITCLASS_STEALTH_FIGHTER')
 	FROM Unit_ClassUpgrades WHERE (UnitType =  'UNIT_FIGHTER' );
 
 /*AI value weighting?*/
