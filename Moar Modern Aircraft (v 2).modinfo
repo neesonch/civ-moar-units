@@ -48,7 +48,12 @@ Models:
     <ReloadUnitSystem>1</ReloadUnitSystem>
   </Properties>
   <Dependencies />
-  <References />
+  <References>
+    <Mod id="8670da15-d435-44ea-9758-7438cb321411" minversion="0" maxversion="999" title="R.E.D. Modpack" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="8411a7a8-dad3-4622-a18e-fcc18324c799" minversion="0" maxversion="999" title="(2) Community Balance Overhaul" />
+    <Mod id="828b5b4b-7c62-4afb-a43f-034b596ef5e4" minversion="0" maxversion="999" title="(6b) Community Balance Overhaul - Compatibility Files (No-EUI)" />
+  </References>
   <Blocks />
   <Files>
     <File md5="BC8074FD91B3D60E90B8F3A1BE4B0151" import="1">Art/Draken/draken.fxsxml</File>
@@ -110,12 +115,12 @@ Models:
     <File md5="979B284731474C16B88C04540ADC475D" import="1">Art/Tornado/TornadoGR1_Italy.gr2</File>
     <File md5="E6F787A971DEE88B8142E25B107E57DB" import="1">Art/Tornado/TornadoGR1_sref.dds</File>
     <File md5="8F76D61859B91B8A4AA78CADC3D9A66B" import="0">SQL/updateNavalFighterVariants.sql</File>
-    <File md5="EBF66C4CC64C333F2DAF7478C66F5749" import="0">SQL/updateDefaultJetFighter.sql</File>
-    <File md5="BE0A0B3383724928BAB17DA37DFD9C1B" import="0">SQL/insertNavalFighter.sql</File>
+    <File md5="628152A4210B93096C5BF5A7725CFFDD" import="0">SQL/updateDefaultJetFighter.sql</File>
+    <File md5="949E9133BE4D4A0E5AF7DDF0DF36EF90" import="0">SQL/insertNavalFighter.sql</File>
     <File md5="45E1CA863AA3BBC39FA0A57D4963EE05" import="0">SQL/updatePromotionPaths.sql</File>
     <File md5="2497ED58D2BAA0704F21261224DA0820" import="0">SQL/updateInterceptorVariants.sql</File>
-    <File md5="39FE2016E382ADE38DA26052D1D975C1" import="0">SQL/insertInterceptor.sql</File>
-    <File md5="C96077175480F3C4728C5546C48C2A98" import="0">SQL/insertStealthFighter.sql</File>
+    <File md5="1B8A715385262BFE4AE407630D4662FA" import="0">SQL/insertInterceptor.sql</File>
+    <File md5="D1B0A28615DC5287CDB123196DC69BD9" import="0">SQL/insertStealthFighter.sql</File>
     <File md5="64C9EA20CF93CD24C1793003A813FD9F" import="0">SQL/updateStealthFighterVariants.sql</File>
   </Files>
   <Actions>
@@ -125,9 +130,9 @@ Models:
       <UpdateDatabase>SQL/insertStealthFighter.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updateInterceptorVariants.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updateNavalFighterVariants.sql</UpdateDatabase>
-      <UpdateDatabase>SQL/UpdateDefaultJetFighter.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updateStealthFighterVariants.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updatePromotionPaths.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updateDefaultJetFighter.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
 </Mod>
