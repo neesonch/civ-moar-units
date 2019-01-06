@@ -26,13 +26,13 @@ INSERT INTO ArtDefine_StrategicView (StrategicViewType, TileType, Asset )
 	 );
 
 /* Unit stats */
-	 INSERT INTO UnitClasses (Type, Description, MaxGlobalInstances, MaxTeamInstances, MaxPlayerInstances, InstanceCostModifier, DefaultUnit )
+INSERT INTO UnitClasses (Type, Description, MaxGlobalInstances, MaxTeamInstances, MaxPlayerInstances, InstanceCostModifier, DefaultUnit )
 	SELECT ( 'UNITCLASS_STEALTH_FIGHTER' ), Description, MaxGlobalInstances, MaxTeamInstances, MaxPlayerInstances, InstanceCostModifier, ( 'UNIT_STEALTH_FIGHTER' )
-	FROM UnitClasses WHERE (Type =  'UNITCLASS_FIGHTER' );
+	FROM UnitClasses WHERE (Type =  'UNITCLASS_JET_FIGHTER' );
 
 INSERT INTO Units (Type, Description, Civilopedia, Strategy, Help, Requirements, Combat, RangedCombat, Cost, Moves, Immobile, Range, BaseSightRange, Class, Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, PrereqTech, ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness, UnitArtInfo, UnitArtInfoCulturalVariation, UnitArtInfoEraVariation, ProjectPrereq, SpaceshipProject, LeaderPromotion, LeaderExperience, DontShowYields, ShowInPedia, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas)
 	SELECT	 ('UNIT_STEALTH_FIGHTER') ,  ('Stealth Fighter') , Civilopedia, Strategy, Help, Requirements,
-			Combat,  RangedCombat * 0.95 ,  Cost * 1.1 , Moves, Immobile,  Range , BaseSightRange,  ('UNITCLASS_STEALTH_FIGHTER') , Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, ('TECH_REFRIGERATION'), ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness,
+			Combat,  RangedCombat * 0.95 ,  Cost * 1.1 , Moves, Immobile,  Range , BaseSightRange,  ('UNITCLASS_STEALTH_FIGHTER') , Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, ('TECH_STEALTH'), ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness,
 			 ('ART_DEF_UNIT_STEALTH_FIGHTER') , UnitArtInfoCulturalVariation, UnitArtInfoEraVariation, ProjectPrereq, SpaceshipProject, LeaderPromotion, LeaderExperience, DontShowYields, ShowInPedia, MoveRate,
 			UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas
 	FROM Units WHERE (Type =  'UNIT_JET_FIGHTER' );
@@ -60,4 +60,9 @@ VALUES ('UNIT_STEALTH_FIGHTER', 'PROMOTION_EVASION_II');
 /*Resource requirements*/
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 	SELECT  ('UNIT_STEALTH_FIGHTER') , ResourceType, Cost
-	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_FIGHTER' );
+	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_JET_FIGHTER' );
+
+/* Flavour text update */
+UPDATE Units
+SET Strategy = 'The Stealth Fighter is a powerful air unit. It can be based in any city you own or aboard an aircraft carrier. Use Stealth Fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Stealth Fighters are especially effective against enemy helicopters and against heavily defended targets due to their ability to evade defenses. The Stealth Fighter has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.'
+WHERE Type = 'UNIT_STEALTH_FIGHTER';

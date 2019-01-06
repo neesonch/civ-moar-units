@@ -1,4 +1,4 @@
 
 UPDATE Units
-SET Special = 'SPECIALUNIT_STEALTH', Description = 'Air Superiority Fighter'
+SET Special = 'SPECIALUNIT_STEALTH', Description = 'Air Superiority Fighter', Strategy = 'The Air Superiority Fighter is a powerful air unit. It can be based in any city you own, but not aboard an aircraft carrier. Use Air Superiority Fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Air Superiority Fighters are especially effective against enemy helicopters. The Air Superiority Fighter has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.'
 WHERE Class = 'UNITCLASS_JET_FIGHTER';
