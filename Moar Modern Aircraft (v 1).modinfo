@@ -32,7 +32,22 @@ Slightly less strength than Air Superiority Fighter, but comes with free Evasion
 
 Models:
 - Default: F-35 Lighnting II
-- Russia, India: Su-57</Description>
+- Russia, India: Su-57
+
+-----------
+
+CAVEAT AND COMPATIBILITY:
+This is my first ever attempt at making a mod. Stability not guaranteed! May run into issues with other mods that also make changes to the vanilla Fighter and Jet Fighter. Should be compatible with the following mods (as these are the mods I use):
+
+- Vox Populi / Community Balance Patch (no-EUI version - untested with EUI)
+- Randomize City Names (v2)
+-  Wonder Race (v7)
+- YNAEMP (v22)
+- Quick Turns (v10)
+-  RED Modpack (v22)
+- InfoAddict (v22)
+- Improved Air Recon (v1)
+- (BNW) Leugi's Barbarian Inmersion Enhancements (v1)</Description>
     <Authors>Cormac Neeson</Authors>
     <SpecialThanks>Gedemon, Wolfdog, snafusmith, labriejp</SpecialThanks>
     <HideSetupGame>0</HideSetupGame>
