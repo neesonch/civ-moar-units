@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mod id="3cff3c4b-d7ff-4df4-8d4e-548df713cc3b" version="2">
+<Mod id="3cff3c4b-d7ff-4df4-8d4e-548df713cc3b" version="1">
   <Properties>
     <Name>Moar Modern Aircraft</Name>
-    <Stability>Experimental</Stability>
+    <Stability>Alpha</Stability>
     <Teaser>Adds a few extra modern aircraft with civ-specific models</Teaser>
     <Description>Adds a few extra modern aircraft. Created using Gedemon's tutorial with models taken from the CivFanatics repository and the Advanced Air-Naval-Ground Units Megamod.
 
@@ -39,8 +39,8 @@ Models:
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>1</SupportsSinglePlayer>
-    <SupportsMultiplayer>1</SupportsMultiplayer>
-    <SupportsHotSeat>1</SupportsHotSeat>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
     <SupportsMac>1</SupportsMac>
     <ReloadAudioSystem>0</ReloadAudioSystem>
     <ReloadLandmarkSystem>0</ReloadLandmarkSystem>
@@ -117,11 +117,11 @@ Models:
     <File md5="2ADEEBC2D423EA3F65218194AE1F5EB8" import="0">SQL/updateCarrierAI.sql</File>
     <File md5="8F76D61859B91B8A4AA78CADC3D9A66B" import="0">SQL/updateNavalFighterVariants.sql</File>
     <File md5="15E8CF257D47C55321F74345526ED8C9" import="0">SQL/updateDefaultJetFighter.sql</File>
-    <File md5="80A6F6CABEA0C90D45813530BA0AF8CD" import="0">SQL/insertNavalFighter.sql</File>
+    <File md5="AC36A3542EE7BB6E198D67BFF9896DDC" import="0">SQL/insertNavalFighter.sql</File>
     <File md5="14C442F44E4F58403FFDDA7BC860B3EB" import="0">SQL/updatePromotionPaths.sql</File>
     <File md5="2497ED58D2BAA0704F21261224DA0820" import="0">SQL/updateInterceptorVariants.sql</File>
-    <File md5="4373924E493735D7B1A8F4449C11D7D9" import="0">SQL/insertInterceptor.sql</File>
-    <File md5="6D0F83DBF266BE555E3523F81BA7C8CE" import="0">SQL/insertStealthFighter.sql</File>
+    <File md5="EE13FE37264E9167A3CC2EC30B67B8D4" import="0">SQL/insertInterceptor.sql</File>
+    <File md5="7A1EE69CE28BE64890FCF42998D58089" import="0">SQL/insertStealthFighter.sql</File>
     <File md5="64C9EA20CF93CD24C1793003A813FD9F" import="0">SQL/updateStealthFighterVariants.sql</File>
   </Files>
   <Actions>

@@ -62,7 +62,7 @@ INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 	SELECT  ('UNIT_STEALTH_FIGHTER') , ResourceType, Cost
 	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_JET_FIGHTER' );
 
-/* Building requirements */
+/* Building requirements - Vox Populi only */
 INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType)
 	SELECT ('UNIT_STEALTH_FIGHTER'), BuildingClassType
 	FROM Unit_BuildingClassPurchaseRequireds WHERE (UnitType =  'UNIT_JET_FIGHTER' );
