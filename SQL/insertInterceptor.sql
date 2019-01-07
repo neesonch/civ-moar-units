@@ -60,6 +60,11 @@ INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 	SELECT  ('UNIT_INTERCEPTOR_JET') , ResourceType, Cost
 	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_FIGHTER' );
 
+/* Building requirements */
+INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType)
+	SELECT ('UNIT_INTERCEPTOR_JET'), BuildingClassType
+	FROM Unit_BuildingClassPurchaseRequireds WHERE (UnitType =  'UNIT_JET_FIGHTER' );
+
 /* Flavour text update */
 UPDATE Units
 SET Strategy = 'Powered by a jet engine, the Interceptor is a powerful air unit. It can be based in any city you own, but not aboard an aircraft carrier. Use Interceptors to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Interceptors are especially effective against enemy helicopters. The Interceptor has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.'

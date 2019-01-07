@@ -114,13 +114,14 @@ Models:
     <File md5="D8C8647AF1967D74BD4AA7F2ED94F62B" import="1">Art/Tornado/TornadoGR1_Italy.fxsxml</File>
     <File md5="979B284731474C16B88C04540ADC475D" import="1">Art/Tornado/TornadoGR1_Italy.gr2</File>
     <File md5="E6F787A971DEE88B8142E25B107E57DB" import="1">Art/Tornado/TornadoGR1_sref.dds</File>
+    <File md5="2ADEEBC2D423EA3F65218194AE1F5EB8" import="0">SQL/updateCarrierAI.sql</File>
     <File md5="8F76D61859B91B8A4AA78CADC3D9A66B" import="0">SQL/updateNavalFighterVariants.sql</File>
     <File md5="15E8CF257D47C55321F74345526ED8C9" import="0">SQL/updateDefaultJetFighter.sql</File>
-    <File md5="866D6452316C370903B464FA6EEA30C8" import="0">SQL/insertNavalFighter.sql</File>
+    <File md5="80A6F6CABEA0C90D45813530BA0AF8CD" import="0">SQL/insertNavalFighter.sql</File>
     <File md5="14C442F44E4F58403FFDDA7BC860B3EB" import="0">SQL/updatePromotionPaths.sql</File>
     <File md5="2497ED58D2BAA0704F21261224DA0820" import="0">SQL/updateInterceptorVariants.sql</File>
-    <File md5="71796A6B1D948A6915997001E8EB8868" import="0">SQL/insertInterceptor.sql</File>
-    <File md5="EE318EF0130C5872AA3AF643BD96AB0B" import="0">SQL/insertStealthFighter.sql</File>
+    <File md5="4373924E493735D7B1A8F4449C11D7D9" import="0">SQL/insertInterceptor.sql</File>
+    <File md5="6D0F83DBF266BE555E3523F81BA7C8CE" import="0">SQL/insertStealthFighter.sql</File>
     <File md5="64C9EA20CF93CD24C1793003A813FD9F" import="0">SQL/updateStealthFighterVariants.sql</File>
   </Files>
   <Actions>
@@ -133,6 +134,7 @@ Models:
       <UpdateDatabase>SQL/updateStealthFighterVariants.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updatePromotionPaths.sql</UpdateDatabase>
       <UpdateDatabase>SQL/updateDefaultJetFighter.sql</UpdateDatabase>
+      <UpdateDatabase>SQL/updateCarrierAI.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
 </Mod>

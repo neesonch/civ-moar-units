@@ -32,7 +32,7 @@ INSERT INTO UnitClasses (Type, Description, MaxGlobalInstances, MaxTeamInstances
 
 INSERT INTO Units (Type, Description, Civilopedia, Strategy, Help, Requirements, Combat, RangedCombat, Cost, Moves, Immobile, Range, BaseSightRange, Class, Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, PrereqTech, ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness, UnitArtInfo, UnitArtInfoCulturalVariation, UnitArtInfoEraVariation, ProjectPrereq, SpaceshipProject, LeaderPromotion, LeaderExperience, DontShowYields, ShowInPedia, MoveRate, UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas)
 	SELECT	 ('UNIT_STEALTH_FIGHTER') ,  ('Stealth Fighter') , Civilopedia, Strategy, Help, Requirements,
-			Combat,  RangedCombat * 0.95 ,  Cost * 1.1 , Moves, Immobile,  Range , BaseSightRange,  ('UNITCLASS_STEALTH_FIGHTER') , Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, ('TECH_STEALTH'), ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness,
+			Combat,  RangedCombat * 0.925 ,  Cost * 1.1 , Moves, Immobile,  Range , BaseSightRange,  ('UNITCLASS_STEALTH_FIGHTER') , Special, Capture, CombatClass, Domain, CivilianAttackPriority, DefaultUnitAI, Food, NoBadGoodies, RivalTerritory, MilitarySupport, MilitaryProduction, Pillage, Found, FoundAbroad, CultureBombRadius, GoldenAgeTurns, IgnoreBuildingDefense, PrereqResources, Mechanized, Suicide, CaptureWhileEmbarked, ('TECH_STEALTH'), ObsoleteTech, GoodyHutUpgradeUnitClass, HurryCostModifier, AdvancedStartCost, MinAreaSize, AirUnitCap, NukeDamageLevel, WorkRate, NumFreeTechs, RushBuilding, BaseHurry, HurryMultiplier, BaseGold, NumGoldPerEra, SpreadReligion, CombatLimit, RangeAttackOnlyInDomain, RangeAttackIgnoreLOS, RangedCombatLimit, XPValueAttack, XPValueDefense, SpecialCargo, DomainCargo, Conscription, ExtraMaintenanceCost, NoMaintenance, Unhappiness,
 			 ('ART_DEF_UNIT_STEALTH_FIGHTER') , UnitArtInfoCulturalVariation, UnitArtInfoEraVariation, ProjectPrereq, SpaceshipProject, LeaderPromotion, LeaderExperience, DontShowYields, ShowInPedia, MoveRate,
 			UnitFlagIconOffset, PortraitIndex, IconAtlas, UnitFlagAtlas
 	FROM Units WHERE (Type =  'UNIT_JET_FIGHTER' );
@@ -61,6 +61,11 @@ VALUES ('UNIT_STEALTH_FIGHTER', 'PROMOTION_EVASION_II');
 INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 	SELECT  ('UNIT_STEALTH_FIGHTER') , ResourceType, Cost
 	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_JET_FIGHTER' );
+
+/* Building requirements */
+INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType)
+	SELECT ('UNIT_STEALTH_FIGHTER'), BuildingClassType
+	FROM Unit_BuildingClassPurchaseRequireds WHERE (UnitType =  'UNIT_JET_FIGHTER' );
 
 /* Flavour text update */
 UPDATE Units

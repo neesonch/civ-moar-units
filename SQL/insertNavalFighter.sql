@@ -60,6 +60,11 @@ INSERT INTO Unit_ResourceQuantityRequirements (UnitType, ResourceType, Cost)
 	SELECT  ('UNIT_NAVAL_FIGHTER') , ResourceType, Cost
 	FROM Unit_ResourceQuantityRequirements WHERE (UnitType =  'UNIT_FIGHTER' );
 
+/* Building requirements */
+INSERT INTO Unit_BuildingClassPurchaseRequireds (UnitType, BuildingClassType)
+	SELECT ('UNIT_NAVAL_FIGHTER'), BuildingClassType
+	FROM Unit_BuildingClassPurchaseRequireds WHERE (UnitType =  'UNIT_JET_FIGHTER' );
+
 /* Flavour text update */
 UPDATE Units
 SET Strategy = 'Powered by a jet engine, the Naval Fighter is a powerful air unit. It can be based in any city you own or aboard an aircraft carrier. Use Naval Fighters to attack enemy aircraft and ground units, to scout enemy positions, and to defend against enemy air attacks. Naval Fighters are especially effective against enemy helicopters. Unlike the Interceptor and Air Superiority Fighter, the Naval Fighter can operate from carriers. The Naval Fighter has the "air recon" ability, which means that everything within 6 tiles of its starting location is visible at the beginning of the turn. See the rules on Aircraft for more information.'
