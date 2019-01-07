@@ -1,6 +1,6 @@
 # Civ 5: Moar Modern Aircraft
 
-Adds a few extra modern aircraft to Civ 5. Created using [Gedemon's tutorial](https://forums.civfanatics.com/threads/add-a-new-unit-in-the-game-using-sql.461429/page-8#post-12154830) and other helpful souls on the CivFanatics forums, with models taken from the [CivFanatics repository](https://forums.civfanatics.com/resources/categories/civ5-modern-era-units.134/) and the [Advanced Air-Naval-Ground Units Megamod](https://steamcommunity.com/sharedfiles/filedetails/?id=464817218) by labriejp.
+Adds a few extra modern aircraft to Civ 5. Created using [Gedemon's tutorial](https://forums.civfanatics.com/threads/add-a-new-unit-in-the-game-using-sql.461429/page-8#post-12154830) and the advice of many other helpful souls on the CivFanatics forums, with models taken from the [CivFanatics repository](https://forums.civfanatics.com/resources/categories/civ5-modern-era-units.134/) and the [Advanced Air-Naval-Ground Units Megamod](https://steamcommunity.com/sharedfiles/filedetails/?id=464817218) by labriejp.
 
 **New Units**
 
